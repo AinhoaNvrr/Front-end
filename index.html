@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF 8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');">
+        <script src="https://kit.fontawesome.com/d2cf978186.js" crossorigin="anonymous>"></script>
+    </head>
+<body>
+<main>
+
+         <form action="" class="formulario" id="formulario">
+             <div class="container">
+             <h1>Create Account</h1>
+
+<!--Nombre-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" title="Rellena este campo" required>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>   
+                </div>
+                <p class="formulario__input-error">Introduzca su nombre</p>
+            </div>
+
+
+<!--Correo-->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Email</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" title="Rellena este campo" required>
+                    <i class="formulario__validación-estado fa-solid fa-circle-exclamation"></i>    
+            </div>
+                <p class="formulario__input-error">Email inválido</p>
+            </div>
+
+<!--contraseña-->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Clave</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario_input" name="password" id="password" title="Rellena este campo" maxlenght="8" required>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+                </div>
+                <p class="No debe tener más de 8 caracteres"></p>
+            </div>
+
+<!--contraseña2-->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Confirme su clave</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2" title="Las contraseñas deben coincidir" maxlength="8" required>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-exclamacion"></i>
+                </div>
+                <p class="Las contraseñas no coinciden"></p>
+            </div>
+
+<!--mensaje campos vacíos-->   
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-hand"></i><b> Error: </b>Rellena los campos</p>
+            </div>
+
+<!--boton enviar-->
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario_btn" id="formulario__btn">Enviar</button>
+            
+                </div>
+            
+            </div>
+        </form>
+            <h6 id="mensaje"></h6> 
+</main>
+
+
+            <script src="./index.js"></script>
+            <script src="https://kit.fontawesome.com/d2cf978186.js" crossorigin="anonymous"></script>
+</body> 
+</html>
