@@ -1,79 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF 8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');">
-        <script src="https://kit.fontawesome.com/d2cf978186.js" crossorigin="anonymous>"></script>
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web AinhoaNC Design</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 <body>
-<main>
 
-         <form action="" class="formulario" id="formulario">
-             <div class="container">
-             <h1>Create Account</h1>
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="./img/botonmenu.svg" alt="" >
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#expertos">Expertos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Convertimos tus sueños en realidad</h1>
+            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
 
-<!--Nombre-->
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label">Nombre</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre" id="nombre" title="Rellena este campo" required>
-                    <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>   
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="img/checklist.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Diseño Web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur atque ut nisi eligendi, 
+                        vero explicabo aspernatur aperiam recusandae repellendus!</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Diseño Web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur atque ut nisi eligendi, 
+                        vero explicabo aspernatur aperiam recusandae repellendus!</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Diseño Web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur atque ut nisi eligendi, 
+                        vero explicabo aspernatur aperiam recusandae repellendus!</p>
+                    </div>
                 </div>
-                <p class="formulario__input-error">Introduzca su nombre</p>
             </div>
-
-
-<!--Correo-->
-            <div class="formulario__grupo" id="grupo__correo">
-                <label for="correo" class="formulario__label">Email</label>
-                <div class="formulario__grupo-input">
-                    <input type="email" class="formulario__input" name="correo" id="correo" title="Rellena este campo" required>
-                    <i class="formulario__validación-estado fa-solid fa-circle-exclamation"></i>    
-            </div>
-                <p class="formulario__input-error">Email inválido</p>
-            </div>
-
-<!--contraseña-->
-            <div class="formulario__grupo" id="grupo__password">
-                <label for="password" class="formulario__label">Clave</label>
-                <div class="formulario__grupo-input">
-                    <input type="password" class="formulario_input" name="password" id="password" title="Rellena este campo" maxlenght="8" required>
-                    <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galería</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/uno.jpg" class="img-galeria" alt="" >
+                    <img src="img/dos.jpg"  class="img-galeria" alt="">
+                    <img src="img/tres.jpg"  class="img-galeria" alt="">
+                    <img src="img/cuatro.jpg"  class="img-galeria" alt="">
+                    <img src="img/cinco.jpg"  class="img-galeria" alt="">
+                    <img src="img/seis.jpg"  class="img-galeria" alt="">
                 </div>
-                <p class="No debe tener más de 8 caracteres"></p>
             </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/bx-x.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
 
-<!--contraseña2-->
-            <div class="formulario__grupo" id="grupo__password2">
-                <label for="password2" class="formulario__label">Confirme su clave</label>
-                <div class="formulario__grupo-input">
-                    <input type="password" class="formulario__input" name="password2" id="password2" title="Las contraseñas deben coincidir" maxlength="8" required>
-                    <i class="formulario__validacion-estado fa-solid fa-circle-exclamacion"></i>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/pie-chart.svg" alt="">
+                    <h3 class="n-expert">Analytics</h3>
                 </div>
-                <p class="Las contraseñas no coinciden"></p>
-            </div>
-
-<!--mensaje campos vacíos-->   
-
-            <div class="formulario__mensaje" id="formulario__mensaje">
-                <p><i class="fa-solid fa-hand"></i><b> Error: </b>Rellena los campos</p>
-            </div>
-
-<!--boton enviar-->
-
-                <div class="formulario__grupo formulario__grupo-btn-enviar">
-                    <button type="submit" class="formulario_btn" id="formulario__btn">Enviar</button>
-            
+                <div class="cont-expert">
+                    <img src="img/seo.svg" alt="">
+                    <h3 class="n-expert">SEO</h3>
                 </div>
-            
+                <div class="cont-expert">
+                    <img src="img/security.svg" alt="">
+                    <h3 class="n-expert">Security</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">AinhoaDesign</h2>
+                <p>Somos expertos en la creación de tus sueños</p>
             </div>
-        </form>
-            <h6 id="mensaje"></h6> 
-</main>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
 
 
-            <script src="./index.js"></script>
-            <script src="https://kit.fontawesome.com/d2cf978186.js" crossorigin="anonymous"></script>
-</body> 
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
 </html>
